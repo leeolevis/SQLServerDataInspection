@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfERPObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+ 
+  <ERPObject>
+    <ObjectName desc="业务类型">组织架构</ObjectName>
+    <ERPTables desc="业务类型子表">
+
+      <ERPTable>
+        <TableName>myBusinessUnit</TableName>
+        <TableKey>BUGUID</TableKey>
+        <TableDesc>商业单位</TableDesc>
+        <TableProps desc="字段">
+          <TableProp>CreatedOn</TableProp>
+          <TableProp>ModifiedOn</TableProp>
+          <TableProp>OrderCode</TableProp> 
+          <TableProp>OrderHierarchyCode</TableProp>
+        </TableProps>
+      </ERPTable>
+
+      <ERPTable>
+        <TableName>myStation</TableName>
+        <TableKey>StationGUID</TableKey>
+        <TableDesc>岗位表</TableDesc>
+        <TableProps desc="字段">
+        <TableProp>StationCode</TableProp>
+        <TableProp>OrderCode</TableProp>
+        <TableProp>HierarchyCode</TableProp>
+        </TableProps>
+      </ERPTable>
+
+    
+
+   
+      <ERPTable>
+        <TableName>myStationUser</TableName>
+        <TableKey>StationGUID,UserGUID</TableKey>
+        <TableDesc>岗位成员表</TableDesc>
+        <TableProps desc="字段">
+        <TableProp>StationUserGUID</TableProp>
+        </TableProps>
+      </ERPTable>
+     
+
+      <ERPTable>
+        <TableName>myUser</TableName>
+        <TableKey>UserGUID</TableKey>
+        <TableDesc>用户表</TableDesc>
+        <TableProps>
+          <TableProp>CreatedOn</TableProp>
+          <TableProp>ModifiedOn</TableProp>
+          <TableProp>PSWModifyTime</TableProp>
+        </TableProps>
+      </ERPTable>
+
+    
+
+    </ERPTables>
+  </ERPObject>
+
+</ArrayOfERPObject>
