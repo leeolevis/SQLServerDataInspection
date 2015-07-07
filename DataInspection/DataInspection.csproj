@@ -75,7 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\ERPObjectBusiness.cs" />
-    <Compile Include="Entity\CheckRule.cs" />
     <Compile Include="Entity\ERPObject.cs" />
     <Compile Include="Helper\DataTableHelper.cs" />
     <Compile Include="Helper\SqlExecuteHelper.cs" />
